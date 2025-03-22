@@ -1,0 +1,56 @@
+\documentclass[UTF8]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{ctex}
+\usepackage{fancyhdr}
+\usepackage{fancyvrb}
+\usepackage{geometry}
+\usepackage{relsize}
+\usepackage{setspace}
+\usepackage{subfigure}
+\usepackage{tikz}
+\usepackage[colorlinks,linkcolor=blue]{hyperref}
+\usepackage[most]{tcolorbox}
+
+\geometry{a4paper,left=2cm,right=2cm,top=2cm,bottom=2cm}
+\setlength{\parindent}{2em}
+\setlength{\baselineskip}{20pt}
+\linespread{1.5}
+\pagestyle{fancy}
+\lhead{}
+\chead{\textbf{Haide College, Ocean University of China}}
+\rhead{Week 4 Homework}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+
+\newcommand{\colorblock}[3][blue]{%
+  \begin{tcolorbox}[
+    enhanced,
+    colback=#1!10!white,
+    colframe=#1!50!white,
+    title=#2,
+    fonttitle=\bfseries,
+    arc=3mm,
+    boxrule=2pt,
+    width=\linewidth,
+    drop shadow={
+      xshift=2mm,
+      yshift=-1mm,
+      color=#1!80!black,
+      opacity=0.5
+    }
+  ]
+  #3
+  \end{tcolorbox}
+}
+
+\begin{document}
+\section*{Real Analysis}
+\colorblock{}{
+    这是一段文本\\
+    这是第二段文本
+}
+\end{document}
